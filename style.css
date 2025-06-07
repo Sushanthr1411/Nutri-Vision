@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.unsplash.com/photo-1530516507579-30c615ffda2f?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8Mnx8Zm9vZCUyQ2Nvb2tpZXxlbnwwfHx8fDE2Nzg4NTQ4MTM&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 4em;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.quote {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.container {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.options button {
+    padding: 20px 40px;
+    font-size: 1.4em;
+    border-radius: 50px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    margin: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.options button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+#bmi-section, #food-section {
+    display: none;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+#bmi-section h2, #food-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type="number"], .search-box input {
+    padding: 12px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    width: 70%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="number"]:focus, .search-box input:focus {
+    border: 1px solid #3498db;
+}
+
+button {
+    background-color: #2980b9;
+    font-size: 1.2em;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1f6bb2;
+    transform: scale(1.05);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+#food-result p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 5px 0;
+}
+
+#food-result img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#bmi-result {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#health-tips ul {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+#health-tips li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}

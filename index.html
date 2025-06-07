@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrivision</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Nutrivision</h1>
+        <p class="quote">Know your Food, Transform your Life</p>
+    </div>
+
+    <div class="container">
+        <div class="options">
+            <button onclick="showBMI()">Personal Assistant</button>
+            <button onclick="showFood()">Know Your Food</button>
+        </div>
+
+        <div id="bmi-section" style="display: none;">
+            <h2>BMI Calculator</h2>
+            <input type="number" id="weight" placeholder="Enter weight in kg" />
+            <input type="number" id="height" placeholder="Enter height in cm" />
+            <button onclick="calculateBMI()">Calculate BMI</button>
+            <p id="bmi-result"></p>
+            <div id="health-tips">
+                <ul id="tips-list"></ul>
+            </div>
+        </div>
+
+        <div id="food-section" style="display: none;">
+            <h2>Food Nutrition Finder</h2>
+            <div class="search-box">
+                <input type="text" id="food-search" placeholder="Search for food (Fruits, Vegetables, Biscuits, Chocolates)" oninput="searchFood()" />
+            </div>
+            <div id="food-result"></div>
+        </div>
+    </div>
+</body>
+</html>
